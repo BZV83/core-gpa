@@ -34,9 +34,19 @@
 
     <form>
         <!--insert html tags --> 
+        <label>Overall GPA:</label>
+        <br>
+        <input type="text" id="overallGPA" title="Enter your overall GPA (ex. 3.42)" required autofocus>
+        <br><br>
+        <label>Last 30 Credits GPA:</label>
+        <br>
+        <input type="text" id="last30GPA" title="Enter your GPA over your last 30 credits (ex. 3.58)" required>
+        <br><br>
+        
         <label>
             Accounting 200 Grade:
         </label>
+        <br>
         <select id="acc200Grade">
             <option value= "4.0" > A</option>
             <option value="3.7">A-</option>
@@ -56,6 +66,7 @@
         <label>
             IS 201 Grade:
         </label>
+        <br>
         <select id="is201Grade">
             <option value= "4.0" > A</option>
             <option value="3.7">A-</option>
@@ -75,6 +86,7 @@
         <label>
             IS 303 Grade:
         </label>
+        <br>
         <select id="is303Grade">
             <option value= "4.0" > A</option>
             <option value="3.7">A-</option>
@@ -90,18 +102,11 @@
             <option value="0.0">E, IE, WE</option>
         </select>
         <br>
-        <label>Overall GPA:</label>
-        <br>
-        <input type="text" id="overallGPA" title="Enter your overall GPA (ex. 3.42)" required autofocus>
-        <br><br>
-        <label>Last 30 Credits GPA:</label>
-        <br>
-        <input type="text" id="last30GPA" title="Enter your GPA over your last 30 credits (ex. 3.58)" required>
-        <br><br>
 
         <label>
             Essay Score:
         </label>
+        <br>
         <select id="essay">
             <option value= "4" > 4</option>
             <option value="3">3</option>
