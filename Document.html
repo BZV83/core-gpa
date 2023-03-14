@@ -1,3 +1,5 @@
+<!-- Bryson Lindsey, McKay Boody, Hayden Enloe, Brendan Vick, Landon Graham -->
+
 <!DOCTYPE html>
 <!-- saved from url=(0105)https://learningsuite.byu.edu/plugins/Upload/fileDownload.php?fileId=771be873-ASqb-lXjC-Se9Q-MM156b16f8e5 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -5,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IS CORE GPA CALCULATOR</title>
+<!-- Enter in bootstrap links to enable styling in main page -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+<!-- function in script tag below is used to calculate GPA -->   
     <script>
         //This function is called when the user clicks on the calcGPA button
         function calcGPA()
@@ -34,22 +37,27 @@
 </head>
 <body style="text-align: center">
     
+<!-- Use div tag to format header banner using bootstrap principles -->
     <div class="jumbotron text-center" style="background-color: blue; color: white;">
         <h1>Welcome to the IS Core GPA Calculator</h1>
         <p>Fill out the required fields to determine your odds of successfully applying to BYU's Information Systems Program</p>
     </div>
     
+<!-- START FORM -->    
     <form>
-        <!--insert html tags --> 
+        <!--insert html tags -->
+<!-- Overall GPA label and input -->
         <label>Overall GPA:</label>
         <br>
         <input type="text" id="overallGPA" title="Enter your overall GPA (ex. 3.42)" required autofocus>
         <br><br>
+<!-- Last 30 credits GPA label and input -->
         <label>Last 30 Credits GPA:</label>
         <br>
         <input type="text" id="last30GPA" title="Enter your GPA over your last 30 credits (ex. 3.58)" required>
         <br><br>
         
+<!-- Accounting 200 grade label and input dropdown using select tag -->
         <label>
             Accounting 200 Grade:
         </label>
@@ -69,7 +77,8 @@
             <option value="0.0">E, IE, WE</option>
         </select>
         <br><br>
-
+        
+<!-- IS 201 grade label and input dropdown using select tag -->
         <label>
             IS 201 Grade:
         </label>
@@ -90,6 +99,7 @@
         </select>
         <br><br>
 
+<!-- IS 303 grade label and input dropdown using select tag -->
         <label>
             IS 303 Grade:
         </label>
@@ -110,6 +120,8 @@
         </select>
         <br><br>
 
+<!-- Essay score label and input dropdown using select tag -->
+
         <label>
             Essay Score:
         </label>
@@ -123,13 +135,14 @@
             <option value="0">0</option>
         </select>
         <br><br>
+<!-- "Calculate GPA" button that runs the "calcGPA" function found in the header -->
         <button type="button" onclick="calcGPA()" control-id="ControlID-1" class="btn btn-default" style="color:blue;font-weight:bold;background-color:aquamarine;">Calculate GPA</button>
 
 
         <!--insert html tag for displaying the calcualted GPA --> 
         <br>
         <label id="coreGPA" style="font-size: 50px;">
-            Core GPA should show here
+            Core GPA shown here
         </label>
 
     </form>
