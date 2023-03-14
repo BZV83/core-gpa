@@ -26,9 +26,22 @@
         }
     </script>
 </head>
-<body>
+<body style="background-color:royalblue; text-align: center; color: aliceblue;">
+    
+    <h1 style = "font-size: 400%;">Welcome to the IS Core GPA Calculator</h1>
+        
+    <h3 style = "font-size: 150%;">Fill out the required fields to determine your odds of successfully applying to BYU's Information Systems Program </h3>
+
     <form>
         <!--insert html tags --> 
+        <label>Overall GPA:</label>
+        <br>
+        <input type="text" id="overallGPA" title="Enter your overall GPA (ex. 3.42)" required>
+        <br><br>
+        <label>Last 30 Credits GPA:</label>
+        <br>
+        <input type="text" id="last30GPA" title="Enter your GPA over your last 30 credits (ex. 3.58)" required>
+        <br><br>
 
         <button type="button" onclick="calcGPA()" control-id="ControlID-1">Calculate GPA</button>
 
