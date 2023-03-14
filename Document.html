@@ -29,10 +29,82 @@
 <body>
     <form>
         <!--insert html tags --> 
+        <label>
+            Accounting 200 Grade:
+        </label>
+        <select id="acc200Grade">
+            <option value= "4.0" > A</option>
+            <option value="3.7">A-</option>
+            <option value="3.4">B+</option>
+            <option value="3.0">B</option>
+            <option value= "2.7" > B-</option>
+            <option value="2.4">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.7">C-</option>
+            <option value= "1.4" > D+</option>
+            <option value="1.0">D</option>
+            <option value="0.7">D-</option>
+            <option value="0.0">E, IE, WE</option>
+        </select>
+        <br>
 
+        <label>
+            IS 201 Grade:
+        </label>
+        <select id="is201Grade">
+            <option value= "4.0" > A</option>
+            <option value="3.7">A-</option>
+            <option value="3.4">B+</option>
+            <option value="3.0">B</option>
+            <option value= "2.7" > B-</option>
+            <option value="2.4">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.7">C-</option>
+            <option value= "1.4" > D+</option>
+            <option value="1.0">D</option>
+            <option value="0.7">D-</option>
+            <option value="0.0">E, IE, WE</option>
+        </select>
+        <br>
+
+        <label>
+            IS 303 Grade:
+        </label>
+        <select id="is303Grade">
+            <option value= "4.0" > A</option>
+            <option value="3.7">A-</option>
+            <option value="3.4">B+</option>
+            <option value="3.0">B</option>
+            <option value= "2.7" > B-</option>
+            <option value="2.4">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.7">C-</option>
+            <option value= "1.4" > D+</option>
+            <option value="1.0">D</option>
+            <option value="0.7">D-</option>
+            <option value="0.0">E, IE, WE</option>
+        </select>
+        <br>
+
+        <label>
+            Essay Score:
+        </label>
+        <select id="essay">
+            <option value= "4" > 4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+<!--?is this dropdown 0 inclusive??-->
+            <option value="0">0</option>
+        </select>
+        <br>
         <button type="button" onclick="calcGPA()" control-id="ControlID-1">Calculate GPA</button>
 
+
         <!--insert html tag for displaying the calcualted GPA --> 
+        <br>
+        <label id="CoreGPA">
+        </label>
     </form>
 
 </body></html>
