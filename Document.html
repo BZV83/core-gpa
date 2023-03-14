@@ -4,7 +4,13 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IS CORE GPA CALCULATOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
     <script>
         //This function is called when the user clicks on the calcGPA button
         function calcGPA()
@@ -26,12 +32,13 @@
         }
     </script>
 </head>
-<body style="background-color:royalblue; text-align: center; color: aliceblue;">
+<body style="text-align: center">
     
-    <h1 style = "font-size: 400%;">Welcome to the IS Core GPA Calculator</h1>
-        
-    <h3 style = "font-size: 150%;">Fill out the required fields to determine your odds of successfully applying to BYU's Information Systems Program </h3>
-
+    <div class="jumbotron text-center" style="background-color: blue; color: white;">
+        <h1>Welcome to the IS Core GPA Calculator</h1>
+        <p>Fill out the required fields to determine your odds of successfully applying to BYU's Information Systems Program</p>
+    </div>
+    
     <form>
         <!--insert html tags --> 
         <label>Overall GPA:</label>
@@ -61,7 +68,7 @@
             <option value="0.7">D-</option>
             <option value="0.0">E, IE, WE</option>
         </select>
-        <br>
+        <br><br>
 
         <label>
             IS 201 Grade:
@@ -81,7 +88,7 @@
             <option value="0.7">D-</option>
             <option value="0.0">E, IE, WE</option>
         </select>
-        <br>
+        <br><br>
 
         <label>
             IS 303 Grade:
@@ -101,7 +108,7 @@
             <option value="0.7">D-</option>
             <option value="0.0">E, IE, WE</option>
         </select>
-        <br>
+        <br><br>
 
         <label>
             Essay Score:
@@ -115,13 +122,13 @@
 <!--?is this dropdown 0 inclusive??-->
             <option value="0">0</option>
         </select>
-        <br>
-        <button type="button" onclick="calcGPA()" control-id="ControlID-1">Calculate GPA</button>
+        <br><br>
+        <button type="button" onclick="calcGPA()" control-id="ControlID-1" class="btn btn-default" style="color:blue;font-weight:bold;background-color:aquamarine;">Calculate GPA</button>
 
 
         <!--insert html tag for displaying the calcualted GPA --> 
         <br>
-        <label id="coreGPA">
+        <label id="coreGPA" style="font-size: 50px;">
             Core GPA should show here
         </label>
 
